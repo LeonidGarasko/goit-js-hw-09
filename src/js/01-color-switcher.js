@@ -2,12 +2,12 @@ const startBtn = document.querySelector('button[data-start]');
 const stopBtn = document.querySelector('button[data-stop]')
 
 startBtn.addEventListener("click", () => {
-    timerId = setInterval(() => { document.body.style.backgroundColor = getRandomHexColor() }, 1000);
+    timerIdd = setInterval(() => { document.body.style.backgroundColor = getRandomHexColor() }, 1000);
     startBtn.setAttribute("disabled", "disabled");
 });
 
 stopBtn.addEventListener("click", () => {
-    clearInterval(timerId);
+    clearInterval(timerIdd);
     startBtn.removeAttribute("disabled", "disabled");
 });
 
